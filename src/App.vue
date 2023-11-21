@@ -4,10 +4,12 @@
 
 <script>
   import HeaderComponent from './components/HeaderComponent.vue';
+  import MainComponent from './components/MainComponent.vue';
   export default {
     name: 'App',
     components: {
-      HeaderComponent
+      HeaderComponent,
+      MainComponent
     },
     data(){
       return{
