@@ -41,11 +41,7 @@
     </div>
     <div class="text-center mt-3 text-white py-3 text-align-center" id="div-boack">
         <ul class="list-unstyled text-center d-flex justify-content-center align-items-center">
-            <li class="px-5">1</li>
-            <li class="px-5">2</li>
-            <li class="px-5">3</li>
-            <li class="px-5">4</li>
-            <li class="px-5">5</li>
+            <li class="px-5" v-for="item in courseMenu">{{ item.name }}</li>
         </ul>
     </div>
     <div class="my-bg-red">
