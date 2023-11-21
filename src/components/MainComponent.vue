@@ -19,35 +19,35 @@
                 popularCourses: [
                     {
                         img: '',
-                        category: '',
+                        category: 'Development',
                         text: '',
                         voto: 4,
                         price: 'Free'
                     },
                     {
                         img: '',
-                        category: '',
+                        category: 'Development',
                         text: '',
                         voto: 4,
                         price: 'Free'
                     },
                     {
                         img: '',
-                        category: '',
+                        category: 'Development',
                         text: '',
                         voto: 4,
                         price: 'Free'
                     },
                     {
                         img: '',
-                        category: '',
+                        category: 'Development',
                         text: '',
                         voto: 4,
                         price: 'Free'
                     },
                     {
                         img: '',
-                        category: '',
+                        category: 'Development',
                         text: '',
                         voto: 4,
                         price: 'Free'
