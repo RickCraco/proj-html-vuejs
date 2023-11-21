@@ -16,7 +16,15 @@
         },
         data(){
             return{
-
+                popularCourses: [
+                    {
+                        img: '',
+                        category: '',
+                        text: '',
+                        voto: 4,
+                        price: 'Free'
+                    }
+                ]
             }
         },
         methods: {
