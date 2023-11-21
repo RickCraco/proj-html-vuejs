@@ -12,6 +12,13 @@
 <script>
 export default {
     name: 'CardComponent',
+    props: {
+        img: String,
+        category: String,
+        text: String,
+        voto: Number,
+        price: String,
+    },
     data() {
         return {
 
