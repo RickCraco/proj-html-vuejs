@@ -110,6 +110,33 @@
                         name: 'Demos',
                         links: []
                     }
+                ],
+                courseMenu: [
+                    {
+                        id : '1',
+                        name : 'Business',
+                        links : []
+                    },
+                    {
+                        id : '2',
+                        name : 'Design',
+                        links : []
+                    },
+                    {
+                        id: '3',
+                        name: 'Development',
+                        links: []
+                    },
+                    {
+                        id: '4',
+                        name: 'Lifestyle',
+                        links: []
+                    },
+                    {
+                        id: '5',
+                        name: 'Office Productivity',
+                        links: []
+                    }
                 ]
             }
         },
