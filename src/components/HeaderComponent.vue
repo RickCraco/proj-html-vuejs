@@ -1,7 +1,9 @@
 <template>
     <div class="container d-flex justify-content-between pt-4 border-bottom">
         <div>
-            <select name="" id=""></select>
+            <select name="" id="">
+                <option value="">ENGLISH</option>
+            </select>
         </div>
         <div>
             <ul class="d-flex list-unstyled align-items-center">
