@@ -1,12 +1,18 @@
 <template>
-    <div>
-
-    </div>
+    
 </template>
 
 <script>
     export default {
-        
+        name: 'CardComponent',
+        data(){
+            return{
+
+            }
+        },
+        methods: {
+
+        }
     }
 </script>
 
