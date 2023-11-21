@@ -1,5 +1,5 @@
 <template>
-
+  <HeaderComponent/>
 </template>
 
 <script>
@@ -15,7 +15,7 @@
       }
     },
     methods : {
-      
+
     }
   }
 </script>

@@ -1,7 +1,5 @@
 <template>
-    <div>
-
-    </div>
+    <h1>Ciao</h1>
 </template>
 
 <script>
@@ -13,7 +11,7 @@
             }
         },
         methods : {
-            
+
         }
     }
 </script>
