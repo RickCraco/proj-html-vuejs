@@ -4,8 +4,15 @@
         <div class="row py-5">
             <CardComponent v-for="card in popularCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price"/>
         </div>
+    </div>
+    <div class="d-flex justify-content-center">
         <div>
-            
+            <h2>
+                Limitless learning, more possibilities
+            </h2>
+        </div>
+        <div>
+            immagine
         </div>
     </div>
 </template>
