@@ -43,7 +43,7 @@
     </div>
     <div class="text-center mt-3 text-white py-3 text-align-center" id="div-boack">
         <ul class="list-unstyled text-center d-flex justify-content-center align-items-center">
-            <li class="px-5" v-for="item in courseMenu">{{ item.name }}</li>
+            <li class="px-5" v-for="item in courseMenu"><i :class="item.icon"></i> {{ item.name }}</li>
         </ul>
     </div>
     <div class="my-bg-red">
@@ -113,31 +113,31 @@ export default {
                 {
                     id: '1',
                     name: 'Business',
-                    icon: '',
+                    icon: 'fa-solid fa-chart-column',
                     links: []
                 },
                 {
                     id: '2',
                     name: 'Design',
-                    icon: '',
+                    icon: 'fa-solid fa-palette',
                     links: []
                 },
                 {
                     id: '3',
                     name: 'Development',
-                    icon: '',
+                    icon: 'fa-solid fa-gear',
                     links: []
                 },
                 {
                     id: '4',
                     name: 'Lifestyle',
-                    icon: '',
+                    icon: 'fa-regular fa-face-smile',
                     links: []
                 },
                 {
                     id: '5',
                     name: 'Office Productivity',
-                    icon: '',
+                    icon: 'fa-solid fa-print',
                     links: []
                 }
             ]
