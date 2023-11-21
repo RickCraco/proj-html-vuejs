@@ -2,7 +2,7 @@
     <div class="container mt-4 pt-4">
         <h2>Popular Development Courses</h2>
         <div class="row">
-            <CardComponent/>
+            <CardComponent v-for="n in 5"/>
         </div>
     </div>
 </template>
