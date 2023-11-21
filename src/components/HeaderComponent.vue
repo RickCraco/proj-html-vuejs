@@ -5,17 +5,17 @@
                 <option value="">ENGLISH</option>
             </select>
         </div>
-        <div>
+        <div class="d-flex align-items-center">
             <ul class="d-flex list-unstyled align-items-center">
                 <li class="px-3" v-for="item in pageMenu">{{ item.name }}</li>
             </ul>
             <ul class="d-flex list-unstyled align-items-center">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="px-3"><i class="fa-brands fa-facebook"></i></li>
+                <li class="px-3"><i class="fa-brands fa-twitter"></i></li>
+                <li class="px-3"><i class="fa-brands fa-instagram"></i></li>
+                <li class="px-3"><i class="fa-brands fa-linkedin"></i></li>
+                <li class="px-3"><i class="fa-brands fa-google-plus"></i></li>
+                <li class="px-3"><i class="fa-brands fa-youtube"></i></li>
             </ul>
         </div>
     </div>
