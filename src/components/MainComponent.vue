@@ -1,8 +1,11 @@
 <template>
     <div class="container mt-4 pt-4">
         <h2>Popular Development Courses</h2>
-        <div class="row">
+        <div class="row py-5">
             <CardComponent v-for="card in popularCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price"/>
+        </div>
+        <div>
+            
         </div>
     </div>
 </template>

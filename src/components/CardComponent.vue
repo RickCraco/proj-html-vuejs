@@ -1,8 +1,8 @@
 <template>
-    <div class="card col" style="width: 18rem;">
-        <img :src="img" class="card-img-top" alt="">
+    <div class="col-4 m-3 border" style="width: 18rem;">
+        <img :src="img" class="card-img" alt="">
         <div class="card-body">
-            <h5 class="card-title">{{ category }}</h5>
+            <h5 class="card-title my-1">{{ category }}</h5>
             <p class="card-text">{{ text }}</p>
             <p>{{ voto }}</p>
             <span>{{ price }}</span>
