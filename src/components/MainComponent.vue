@@ -26,6 +26,10 @@
         <div class="row py-5 g-2 flex-nowrap overflow-hidden scroll-smooth">
             <CardComponent v-for="card in recentCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price"/>
         </div>
+        <div class="text-center">
+            <div class="my-btn"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="my-btn"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
     </div>
 </template>
 
@@ -214,4 +218,17 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+    .my-btn{
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 44px;
+        text-align: center;
+        color: #e0e0e0;
+        border: 1px solid #e0e0e0;
+        cursor: pointer;
+        transition: 3s ease;
+    }
+</style>
