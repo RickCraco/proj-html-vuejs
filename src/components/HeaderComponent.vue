@@ -14,7 +14,7 @@
                             <ul class="submenu p-0 ps-2" v-if="item.links.length">
                                 <li v-for="subitem in item.links">
                                     {{ subitem.name }}
-                                    <ul class="sub-sub-menu">
+                                    <ul class="sub-sub-menu" v-if="subitem.links.length">
                                         <li v-for="subsubitem in subitem.links">{{ subsubitem }}</li>
                                     </ul>
                                 </li>
@@ -159,25 +159,32 @@ export default {
                     name: 'Demos',
                     links: [
                         {
-                            name: 'Udemy Affiliate'
+                            name: 'Udemy Affiliate',
+                            links: []
                         },
                         {
-                            name: 'Light LMS'
+                            name: 'Light LMS',
+                            links: []
                         },
                         {
-                            name: 'Dark LMS'
+                            name: 'Dark LMS',
+                            links: []
                         },
                         {
-                            name: 'Architecture'
+                            name: 'Architecture',
+                            links: []
                         },
                         {
-                            name: 'Coding School'
+                            name: 'Coding School',
+                            links: []
                         },
                         {
-                            name: 'Online Academy'
+                            name: 'Online Academy',
+                            links: []
                         },
                         {
-                            name: 'Offline Courses'
+                            name: 'Offline Courses',
+                            links: []
                         }
                     ]
                 }
