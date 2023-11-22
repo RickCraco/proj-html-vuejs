@@ -31,6 +31,7 @@
             <div class="my-btn" @click="scrollRight()"><i class="fa-solid fa-chevron-right"></i></div>
         </div>
     </div>
+    <PartnerComponent/>
 </template>
 
 <script>
