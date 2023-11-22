@@ -1,7 +1,7 @@
 <template>
     <div class="mt-4 py-4">
-        <button class="btn position-relative">
-            <span>READ MORE</span>
+        <button class="rounded-pill position-relative border-0" :style="{'background-color':  color}">
+            <span>{{ text }}</span>
             <div></div>
         </button>
     </div>
@@ -9,13 +9,16 @@
 
 <script>
 export default {
-    name: 'Button'
+    name: 'Button',
+    props: {
+        text: String,
+        color: String
+    }
 }
 </script>
 
 <style lang="scss" scoped>
     button{
-        background-color: #FF4450;
         color: white;
         padding: 20px;
         padding-left: 40px;
@@ -40,7 +43,6 @@ export default {
         }
 
         &:hover{
-            background-color: #FF4450;
             color: white;
             >div{
                 width: 100%;

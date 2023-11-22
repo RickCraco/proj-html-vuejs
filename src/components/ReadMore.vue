@@ -5,7 +5,7 @@
                 Limitless learning,<br>more possibilities
             </h2>
             <p>Online courses open the opportunity for learning to almost anyone,<br>regardless of their scheduling commitments.</p>
-            <Button/>
+            <Button :color="'#FF4450'" :text="'READ MORE'"/>
         </div>
     </div>
 </template>
