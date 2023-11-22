@@ -39,13 +39,15 @@ import PartnerComponent from './PartnerComponent.vue';
 import NewsLetter from './NewsLetter.vue';
 import CardComponent from './CardComponent.vue';
 import ReadMore from './ReadMore.vue';
+import FutureComponent from './FutureComponent.vue';
 export default {
     name: 'MainComponent',
     components: {
         CardComponent,
         ReadMore,
         NewsLetter,
-        PartnerComponent
+        PartnerComponent,
+        FutureComponent
     },
     data() {
         return {
