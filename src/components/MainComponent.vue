@@ -6,6 +6,16 @@
         </div>
     </div>
     <ReadMore/>
+    <div class="container mt-4 pt-4">
+        <h2 class="text-center">Recent Courses</h2>
+        <div>
+            <ul>
+
+            </ul>
+        </div>
+        <div class="row py-5">
+        </div>
+    </div>
 </template>
 
 <script>
@@ -61,6 +71,40 @@
                         text: 'Xamarin Forms: Build Native Cross-platform Apps with C#',
                         voto: 4,
                         price: 'Free'
+                    }
+                ],
+                categories: [
+                    {
+                        id: '1',
+                        name: 'All Categories',
+                    },
+                    {
+                        id: '2',
+                        name: 'Business',
+                    },
+                    {
+                        id: '3',
+                        name: 'Design',
+                    },
+                    {
+                        id: '4',
+                        name: 'Development'
+                    },
+                    {
+                        id: '5',
+                        name: 'IT & SOFTWARE'
+                    },
+                    {
+                        id: '6',
+                        name: 'Lifestyle'
+                    },
+                    {
+                        id: '7',
+                        name: 'Marketing'
+                    },
+                    {
+                        id: '8',
+                        name: 'Office Productivity'
                     }
                 ]
             }
