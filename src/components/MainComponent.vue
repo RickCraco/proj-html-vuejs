@@ -8,9 +8,9 @@
     <ReadMore/>
     <div class="container mt-4 pt-4">
         <h2 class="text-center">Recent Courses</h2>
-        <div>
-            <ul>
-
+        <div class="pt-3">
+            <ul class="list-unstyled text-center d-flex justify-content-center align-items-center">
+                <li class="px-4" v-for="item in categories">{{ item.name }}</li>
             </ul>
         </div>
         <div class="row py-5">
