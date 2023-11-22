@@ -62,9 +62,14 @@
                 <span>icona</span>
             </div>
         </div>
-        <div class="text-center mt-3 text-white py-3 text-align-center" id="div-boack">
-            <ul class="list-unstyled text-center d-flex justify-content-center align-items-center">
-                <li class="px-5" v-for="item in courseMenu"><i :class="item.icon"></i> {{ item.name }}</li>
+        <div class="text-center mt-3 text-white text-align-center" id="div-boack">
+            <ul class="list-unstyled text-center d-flex justify-content-center align-items-center position-relative big-menu h-100 m-0">
+                <li class="px-5 py-4 my-bg-hover" v-for="item in courseMenu"><i :class="item.icon"></i>
+                    {{ item.name }}
+                    <ul class="row list-unstyled big-sub-menu">
+                        <li v-for="subitem in item.links" class="col-3">{{ subitem }}</li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="my-bg-red mt-5">
@@ -234,7 +239,14 @@ export default {
     background-color: #FF4450;
 }
 
-
+.my-bg-hover{
+    transition: all 0.4s ease;
+    height: 100%;
+    &:hover{
+        background-color: #457993;
+       
+    }
+}
 
 .itemmenu {
 
@@ -282,5 +294,26 @@ export default {
         }
     }
 
+}
+
+.big-menu {
+
+    > li:hover{
+        .big-sub-menu{
+            opacity: 1;
+            z-index: 1;
+        }
+    }
+    .big-sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.3s ease;
+        background-color: #457993;
+        width: 1300px !important;
+        transform: translateX(-50%);
+    }
 }
 </style>
