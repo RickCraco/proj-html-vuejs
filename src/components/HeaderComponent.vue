@@ -1,79 +1,81 @@
 <template>
-    <div class="border-bottom">
-        <div class="container d-flex justify-content-between pt-4">
+    <div class="overflow-hidden">
+        <div class="border-bottom">
+            <div class="container d-flex justify-content-between pt-4">
+                <div>
+                    <select name="" id="" class="border-0">
+                        <option value="">ENGLISH</option>
+                    </select>
+                </div>
+                <div class="d-flex align-items-center">
+                    <ul class="d-flex list-unstyled align-items-center">
+                        <li class="px-3 position-relative itemmenu" v-for="item in pageMenu">
+                            {{ item.name }}
+                            <ul class="submenu p-0 ps-2" v-if="item.links.length">
+                                <li v-for="subitem in item.links">
+                                    {{ subitem.name }}
+                                    <ul class="sub-sub-menu">
+                                        <li v-for="subsubitem in subitem.links">{{ subsubitem }}</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="d-flex list-unstyled align-items-center">
+                        <li class="px-3"><i class="fa-brands fa-facebook"></i></li>
+                        <li class="px-3"><i class="fa-brands fa-twitter"></i></li>
+                        <li class="px-3"><i class="fa-brands fa-instagram"></i></li>
+                        <li class="px-3"><i class="fa-brands fa-linkedin"></i></li>
+                        <li class="px-3"><i class="fa-brands fa-google-plus"></i></li>
+                        <li class="px-3"><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex align-items-center mt-3">
             <div>
-                <select name="" id="" class="border-0">
-                    <option value="">ENGLISH</option>
-                </select>
+                <img src="/img/MasterStudy.svg" alt="">
             </div>
-            <div class="d-flex align-items-center">
-                <ul class="d-flex list-unstyled align-items-center">
-                    <li class="px-3 position-relative itemmenu" v-for="item in pageMenu">
-                        {{ item.name }}
-                        <ul class="submenu p-0 ps-2" v-if="item.links.length">
-                            <li v-for="subitem in item.links">
-                                {{ subitem.name }}
-                                <ul class="sub-sub-menu">
-                                    <li v-for="subsubitem in subitem.links">{{ subsubitem }}</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="d-flex list-unstyled align-items-center">
-                    <li class="px-3"><i class="fa-brands fa-facebook"></i></li>
-                    <li class="px-3"><i class="fa-brands fa-twitter"></i></li>
-                    <li class="px-3"><i class="fa-brands fa-instagram"></i></li>
-                    <li class="px-3"><i class="fa-brands fa-linkedin"></i></li>
-                    <li class="px-3"><i class="fa-brands fa-google-plus"></i></li>
-                    <li class="px-3"><i class="fa-brands fa-youtube"></i></li>
-                </ul>
+            <div class="ps-4">
+                <span class="itemmenu">
+                    <i class="fa-solid fa-bars"></i> CATEGORY
+                    <ul class="submenu">
+                        <li v-for="item in courseMenu" class="py-2">
+                            {{ item.name }}
+                            <ul class="sub-sub-menu d-flex flex-column flex-wrap">
+                                <li v-for="subitem in item.links" class="py-2">{{ subitem }}</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+            <div class="ps-4">
+                <input type="text" class="">
+            </div>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="d-flex align-items-center" id="login">
+                <span>scritta</span>
+                <button>bottone</button>
+                <span>icona</span>
             </div>
         </div>
-    </div>
-    <div class="container d-flex align-items-center mt-3">
-        <div>
-            <img src="/img/MasterStudy.svg" alt="">
+        <div class="text-center mt-3 text-white py-3 text-align-center" id="div-boack">
+            <ul class="list-unstyled text-center d-flex justify-content-center align-items-center">
+                <li class="px-5" v-for="item in courseMenu"><i :class="item.icon"></i> {{ item.name }}</li>
+            </ul>
         </div>
-        <div class="ps-4">
-            <span class="itemmenu">
-                <i class="fa-solid fa-bars"></i> CATEGORY
-                <ul class="submenu">
-                    <li v-for="item in courseMenu" class="py-2">
-                        {{ item.name }}
-                        <ul class="sub-sub-menu d-flex flex-column flex-wrap">
-                            <li v-for="subitem in item.links" class="py-2">{{ subitem }}</li>
-                        </ul>
-                    </li>
-                </ul>
-            </span>
-        </div>
-        <div class="ps-4">
-            <input type="text" class="">
-        </div>
-        <div>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="d-flex align-items-center" id="login">
-            <span>scritta</span>
-            <button>bottone</button>
-            <span>icona</span>
-        </div>
-    </div>
-    <div class="text-center mt-3 text-white py-3 text-align-center" id="div-boack">
-        <ul class="list-unstyled text-center d-flex justify-content-center align-items-center">
-            <li class="px-5" v-for="item in courseMenu"><i :class="item.icon"></i> {{ item.name }}</li>
-        </ul>
-    </div>
-    <div class="my-bg-red mt-5">
-        <div class="text-white d-flex align-items-center">
-            <div class="ps-3">
-                <h1 class="">Udemy Affiliate Sales</h1>
-                <h4 class="">Monetize your audience and attract new customers with Udemy!</h4>
-            </div>
-            <div class="my-slide">
-                <img src="/img/slide-1.jpg" alt="">
+        <div class="my-bg-red mt-5">
+            <div class="text-white d-flex align-items-center">
+                <div class="ps-3">
+                    <h1 class="">Udemy Affiliate Sales</h1>
+                    <h4 class="">Monetize your audience and attract new customers with Udemy!</h4>
+                </div>
+                <div class="my-slide">
+                    <img src="/img/slide-1.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -150,7 +152,29 @@ export default {
                 {
                     id: '5',
                     name: 'Demos',
-                    links: ['Udemy Affiliate', 'Light LMS', 'Dark LMS', 'Architecture', 'Coding School', 'Online Academy', 'Offline Courses']
+                    links: [
+                        {
+                            name: 'Udemy Affiliate'
+                        },
+                        {
+                            name: 'Light LMS'
+                        },
+                        {
+                            name: 'Dark LMS'
+                        },
+                        {
+                            name: 'Architecture'
+                        },
+                        {
+                            name: 'Coding School'
+                        },
+                        {
+                            name: 'Online Academy'
+                        },
+                        {
+                            name: 'Offline Courses'
+                        }
+                    ]
                 }
             ],
             courseMenu: [
@@ -164,25 +188,25 @@ export default {
                     id: '2',
                     name: 'Design',
                     icon: 'fa-solid fa-palette',
-                    links: ['suca', 'suca']
+                    links: ['3D Animation', 'Desing Thinking', 'Game Design', 'Other', 'Web Design', 'Architectural Design', 'Design Tools', 'Graphic Design', 'User Experience']
                 },
                 {
                     id: '3',
                     name: 'Development',
                     icon: 'fa-solid fa-gear',
-                    links: ['suca']
+                    links: ['Data Science', 'Development Tools', 'Game Development', 'Programming Languages', 'Software Testing', 'Databases', 'E-commerce', 'Mobile Apps', 'Software Engineering', 'Web Development']
                 },
                 {
                     id: '4',
                     name: 'Lifestyle',
                     icon: 'fa-regular fa-face-smile',
-                    links: ['suca']
+                    links: ['Arts & Crafts', 'Foode & Beverage', 'Home Improvement', 'Travel', 'Beauty & Makeup', 'Gaming', 'Pet Care & Training']
                 },
                 {
                     id: '5',
                     name: 'Office Productivity',
                     icon: 'fa-solid fa-print',
-                    links: ['suca']
+                    links: ['Apple', 'Google', 'SAP', 'Microsoft', 'Oracle']
                 }
             ]
         }
@@ -236,7 +260,7 @@ export default {
         border-top: 2px solid red;
         width: 300px;
 
-        > li:hover {
+        >li:hover {
             .sub-sub-menu {
                 z-index: 1;
                 opacity: 1;
