@@ -9,10 +9,12 @@
 
 <script>
     import CardComponent from './CardComponent.vue';
+    import ReadMore from './ReadMore.vue';
     export default {
         name: 'MainComponent',
         components: {
-            CardComponent
+            CardComponent,
+            ReadMore,
         },
         data(){
             return{
