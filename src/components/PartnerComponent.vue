@@ -1,5 +1,22 @@
 <template>
-    
+    <div class="container">
+        <div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
