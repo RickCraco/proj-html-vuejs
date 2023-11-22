@@ -15,7 +15,7 @@
             </ul>
         </div>
         <div class="row py-5">
-
+            <CardComponent v-for="card in recentCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price"/>
         </div>
     </div>
 </template>
