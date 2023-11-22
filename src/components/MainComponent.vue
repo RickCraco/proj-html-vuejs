@@ -20,6 +20,13 @@
         <div class="text-center"><button>Show All</button></div>
     </div>
     <NewsLetter/>
+    <div class="container pt-4">
+        <h2 class="text-center">Popular Courses</h2>
+        <p class="text-center">Discover our most popular courses for self learning</p>
+        <div class="row py-5">
+            <CardComponent v-for="card in recentCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price"/>
+        </div>
+    </div>
 </template>
 
 <script>
