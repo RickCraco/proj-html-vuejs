@@ -17,7 +17,7 @@
         <div class="row py-5">
             <CardComponent v-for="card in recentCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price"/>
         </div>
-        <div class="text-center"><button>Show All</button></div>
+        <div class="text-center"><Button :text="'SHOW ALL'" :color="'#457993'"/></div>
     </div>
     <NewsLetter/>
     <div class="container pt-4">
