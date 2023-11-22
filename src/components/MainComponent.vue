@@ -19,6 +19,7 @@
         </div>
         <div class="text-center"><button>Show All</button></div>
     </div>
+    <NewsLetter/>
 </template>
 
 <script>
@@ -30,6 +31,7 @@ export default {
     components: {
         CardComponent,
         ReadMore,
+        NewsLetter
     },
     data() {
         return {
