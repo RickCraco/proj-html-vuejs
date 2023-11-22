@@ -9,7 +9,7 @@
                     <div class="ms-3">
                         <h3 class="my-font-size">Become an Instructor</h3>
                         <p class="fs-5">Teach what you love. Masterstudy gives you the tools to create a course.</p>
-                        <button>START TEACHING</button>
+                        <Button :text="'START TEACHING'" :color="'#FF4450'" :colorHover="'#009B72'"/>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                     <div class="ms-3">
                         <h3 class="my-font-size">Access For Business</h3>
                         <p class="fs-5">Get unlimited access to 2,500 of top courses for your team.</p>
-                        <Button :text="'DOING BUSINESS'" :color="'#FF4450'"/>
+                        <Button :text="'DOING BUSINESS'" :color="'#FF4450'" :colorHover="'#009B72'"/>
                     </div>
                 </div>
             </div>

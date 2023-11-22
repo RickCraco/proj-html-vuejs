@@ -2,7 +2,7 @@
     <div class="mt-4 py-4">
         <button class="rounded-pill position-relative border-0" :style="{'background-color':  color}">
             <span>{{ text }}</span>
-            <div></div>
+            <div :style="{'background-color': colorHover}"></div>
         </button>
     </div>
 </template>
@@ -12,7 +12,8 @@ export default {
     name: 'Button',
     props: {
         text: String,
-        color: String
+        color: String,
+        colorHover: String,
     }
 }
 </script>
