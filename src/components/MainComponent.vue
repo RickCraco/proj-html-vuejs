@@ -36,6 +36,7 @@
 </template>
 
 <script>
+import Button from './Button.vue';
 import PartnerComponent from './PartnerComponent.vue';
 import NewsLetter from './NewsLetter.vue';
 import CardComponent from './CardComponent.vue';
@@ -48,7 +49,8 @@ export default {
         ReadMore,
         NewsLetter,
         PartnerComponent,
-        FutureComponent
+        FutureComponent,
+        Button
     },
     data() {
         return {
