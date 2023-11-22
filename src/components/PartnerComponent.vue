@@ -21,7 +21,7 @@
                     <div class="ms-3">
                         <h3 class="my-font-size">Access For Business</h3>
                         <p class="fs-5">Get unlimited access to 2,500 of top courses for your team.</p>
-                        <button>DOING BUSINESS</button>
+                        <Button :text="'DOING BUSINESS'" :color="'#FF4450'"/>
                     </div>
                 </div>
             </div>
