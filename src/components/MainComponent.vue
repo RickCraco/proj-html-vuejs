@@ -5,6 +5,7 @@
             <CardComponent v-for="card in popularCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price"/>
         </div>
     </div>
+    <ReadMore/>
 </template>
 
 <script>
