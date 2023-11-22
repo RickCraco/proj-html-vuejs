@@ -23,12 +23,12 @@
     <div class="container pt-4">
         <h2 class="text-center">Popular Courses</h2>
         <p class="text-center">Discover our most popular courses for self learning</p>
-        <div class="row py-5 g-2 flex-nowrap overflow-hidden scroll-smooth">
+        <div class="row py-5 g-2 flex-nowrap overflow-hidden scroll-smooth" ref="carosello">
             <CardComponent v-for="card in recentCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price"/>
         </div>
         <div class="text-center">
-            <div class="my-btn"><i class="fa-solid fa-chevron-left"></i></div>
-            <div class="my-btn"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="my-btn" @click="scrollLeft()"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="my-btn" @click="scrollRight()"><i class="fa-solid fa-chevron-right"></i></div>
         </div>
     </div>
 </template>
@@ -213,7 +213,12 @@ export default {
         }
     },
     methods: {
-
+        scrollLeft(){
+            this.$refs.carosello.scrollBy(-400, 0);
+        },
+        scrollRight(){
+            this.$refs.carosello.scrollBy(400,0);
+        }
     }
 }
 </script>
