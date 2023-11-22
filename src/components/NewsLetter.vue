@@ -1,10 +1,10 @@
 <template>
-    
+
 </template>
 
 <script>
     export default {
-        
+        name: 'NewsLetter'
     }
 </script>
 

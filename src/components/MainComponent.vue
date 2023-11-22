@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import NewsLetter from './NewsLetter.vue';
 import CardComponent from './CardComponent.vue';
 import ReadMore from './ReadMore.vue';
 export default {
