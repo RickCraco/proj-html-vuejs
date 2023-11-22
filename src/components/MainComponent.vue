@@ -34,6 +34,7 @@
 </template>
 
 <script>
+import PartnerComponent from './PartnerComponent.vue';
 import NewsLetter from './NewsLetter.vue';
 import CardComponent from './CardComponent.vue';
 import ReadMore from './ReadMore.vue';
@@ -42,7 +43,8 @@ export default {
     components: {
         CardComponent,
         ReadMore,
-        NewsLetter
+        NewsLetter,
+        PartnerComponent
     },
     data() {
         return {
