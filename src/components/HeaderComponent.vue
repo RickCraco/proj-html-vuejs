@@ -2,7 +2,7 @@
     <div class="border-bottom">
         <div class="container d-flex justify-content-between pt-4">
             <div>
-                <select name="" id="">
+                <select name="" id="" class="border-0">
                     <option value="">ENGLISH</option>
                 </select>
             </div>
