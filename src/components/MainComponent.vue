@@ -32,6 +32,7 @@
         </div>
     </div>
     <PartnerComponent/>
+    <FutureComponent/>
 </template>
 
 <script>
