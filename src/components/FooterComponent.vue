@@ -1,7 +1,7 @@
 <template>
     <div class="my-bg-footer">
         <div class="container">
-            <div class="row">
+            <div class="row text-white">
                 <div class="col-3">
                     <h4>ABOUT</h4>
                 </div>

@@ -54,14 +54,16 @@
     }
     .my-bg-img{
         background-image: url('/img/testimonial-1-1917x640-1-1914x639.jpg');
-        height: 800px;
         background-repeat: no-repeat;
         padding-top: 120px;
+        padding-bottom: 120px;
+        background-size: cover;
     }
     .my-bg-img-second{
         background-image: url('/img/micah-296507-unsplash-1-copy-1-1920x700-1-1917x699.jpg');
-        height: 800px;
         background-repeat: no-repeat;
         padding-top: 120px;
+        padding-bottom: 120px;
+        background-size: cover;
     }
 </style>
