@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-3 ps-4">
-
+                    <img src="/img/Top-udemy-courses-90-percent-off.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -84,6 +84,11 @@
 </script>
 
 <style lang="scss" scoped>
+
+    img{
+        width: 250px;
+    }
+
     .my-bg-footer{
         background-color: #273044;
     }
