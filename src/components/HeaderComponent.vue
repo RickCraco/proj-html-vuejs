@@ -83,7 +83,7 @@
                     <h4 class="">Monetize your audience and attract new customers with Udemy!</h4>
                 </div>
                 <div class="my-slide">
-                    <img src="/img/slide-1.jpg" alt="">
+                    <img :src="slides[slideIndex]" alt="">
                 </div>
             </div>
         </div>
@@ -99,6 +99,8 @@ export default {
     },
     data() {
         return {
+            slideIndex: 0,
+            slides : ['/img/slide-1.jpg','/img/valentine.jpg'],
             pageMenu: [
                 {
                     id: '1',
@@ -232,7 +234,17 @@ export default {
         }
     },
     methods: {
-
+        changeSlide(){
+            setInterval(()=>{
+                this.slideIndex = 1;
+            }, 7000)
+            setInterval(()=>{
+                this.slideIndex = 0;
+            }, 14000)
+        }
+    },
+    mounted(){
+        this.changeSlide();
     }
 }
 </script>
