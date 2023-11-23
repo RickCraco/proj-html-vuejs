@@ -6,7 +6,10 @@
                 <h5 class="card-title my-1">{{ category }}</h5>
                 <p class="card-text border-bottom pb-2">{{ text }}</p>
                 <div class="d-flex justify-content-between">
-                    <p v-if="voto > 0"><img src="/img/starfull.svg" alt="" v-for="n in voto"></p>
+                    <p v-if="voto > 0">
+                        <br>
+                        <img src="/img/starfull.svg" alt="" v-for="n in voto">
+                    </p>
                     <span>
                         <p class="m-0 text-decoration-line-through">{{ originalPrice }}</p> 
                         {{ price }}
