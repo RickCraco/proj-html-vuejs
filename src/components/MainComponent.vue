@@ -54,6 +54,7 @@ export default {
     },
     data() {
         return {
+            filterCategory: '',
             popularCourses: [
                 {
                     img: '/img/895786_7b4b_2-272x161.jpg',
@@ -244,6 +245,9 @@ export default {
         },
         scrollRight(){
             this.$refs.carosello.scrollBy(400,0);
+        },
+        saveCategory(category){
+            
         }
     }
 }
