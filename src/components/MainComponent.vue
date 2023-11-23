@@ -15,7 +15,7 @@
             </ul>
         </div>
         <div class="row py-5">
-            <CardComponent v-for="card in recentCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price"/>
+            <CardComponent v-for="card in recentCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price" :originalPrice="card.originalPrice"/>
         </div>
         <div class="text-center"><Button :text="'SHOW ALL'" :color="'#457993'"/></div>
     </div>
@@ -24,7 +24,7 @@
         <h2 class="text-center">Popular Courses</h2>
         <p class="text-center">Discover our most popular courses for self learning</p>
         <div class="row py-5 g-2 flex-nowrap overflow-hidden scroll-smooth" ref="carosello">
-            <CardComponent v-for="card in recentCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price"/>
+            <CardComponent v-for="card in recentCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price" :originalPrice="card.originalPrice"/>
         </div>
         <div class="text-center">
             <div class="my-btn" @click="scrollLeft()"><i class="fa-solid fa-chevron-left"></i></div>
@@ -144,84 +144,96 @@ export default {
                     category: 'Development',
                     text: 'The Complete iOS 11 & Swift Developer Course–Build 20 Apps',
                     voto: 4,
+                    originalPrice: '',
                     price: 'Free'
                 },
                 {
-                    img: '/img/246154_d8b0_3-272x161.jpg',
+                    img: '/img/1561458_7f3b-272x161.jpg',
                     category: 'Design',
                     text: 'CSS – The Complete Guide 2020 (incl. Flexbox, Grid & Sass)',
                     voto: 5,
-                    price: 'Free'
+                    originalPrice: '$199.99',
+                    price: '$100'
                 },
                 {
                     img: '/img/246154_d8b0_3-272x161.jpg',
                     category: 'Development',
                     text: 'Web Design for Beginners: Real World Coding in HTML & CSS',
-                    voto: 4,
-                    price: 'Free'
+                    voto: 5,
+                    originalPrice: '$129.99',
+                    price: '$65'
                 },
                 {
-                    img: '/img/246154_d8b0_3-272x161.jpg',
-                    category: 'Development',
-                    text: 'Web Design for Beginners: Real World Coding in HTML & CSS',
+                    img: '/img/1208228_d61c_4-272x161.jpg',
+                    category: 'Design',
+                    text: 'Digitally Painting Light and Color: Amateur to Master',
                     voto: 4,
-                    price: 'Free'
+                    originalPrice: '$139.99',
+                    price: '$70'
                 },
                 {
-                    img: '/img/246154_d8b0_3-272x161.jpg',
-                    category: 'Development',
-                    text: 'Web Design for Beginners: Real World Coding in HTML & CSS',
-                    voto: 4,
-                    price: 'Free'
+                    img: '/img/186792_41e4_4-272x161.jpg',
+                    category: 'Arts & Crafts',
+                    text: 'Become an Arabic Calligraphy Artist from Scratch',
+                    voto: 5,
+                    originalPrice: '',
+                    price: '$199.99'
                 },
                 {
-                    img: '/img/246154_d8b0_3-272x161.jpg',
-                    category: 'Development',
-                    text: 'Web Design for Beginners: Real World Coding in HTML & CSS',
+                    img: '/img/1776542_30b1-272x161.jpg',
+                    category: 'Google',
+                    text: 'Google Searching Ninja',
                     voto: 4,
-                    price: 'Free'
+                    originalPrice: '$89.99',
+                    price: '$45'
                 },
                 {
-                    img: '/img/246154_d8b0_3-272x161.jpg',
-                    category: 'Development',
-                    text: 'Web Design for Beginners: Real World Coding in HTML & CSS',
-                    voto: 4,
-                    price: 'Free'
+                    img: '/img/949316_2a64_11-272x161.jpg',
+                    category: 'Arts & Crafts',
+                    text: 'Foundations for Mastering Watercolor Painting',
+                    voto: 5,
+                    originalPrice: '$19.99',
+                    price: '$10'
                 },
                 {
-                    img: '/img/246154_d8b0_3-272x161.jpg',
-                    category: 'Development',
-                    text: 'Web Design for Beginners: Real World Coding in HTML & CSS',
+                    img: '/img/366802_6fcc-272x161.jpg',
+                    category: 'Food & Beverage',
+                    text: 'Get Wine-Smart',
                     voto: 4,
-                    price: 'Free'
+                    originalPrice: '$49.99',
+                    price: '$25'
                 },
                 {
-                    img: '/img/246154_d8b0_3-272x161.jpg',
-                    category: 'Development',
-                    text: 'Web Design for Beginners: Real World Coding in HTML & CSS',
+                    img: '/img/381588_2e6d_4-272x161.jpg',
+                    category: 'Arts & Crafts',
+                    text: 'The Colored Pencil Drawing Course',
                     voto: 4,
-                    price: 'Free'
+                    originalPrice: '$34.99',
+                    price: '$18'
                 },
                 {
-                    img: '/img/246154_d8b0_3-272x161.jpg',
-                    category: 'Development',
-                    text: 'Web Design for Beginners: Real World Coding in HTML & CSS',
+                    img: '/img/838056_611a_3-272x161.jpg',
+                    category: 'Arts & Crafts',
+                    text: 'Paint Realistic Watercolor and Botanicals – STUDIO BASICS',
                     voto: 4,
-                    price: 'Free'
+                    originalPrice: '$69.99',
+                    price: '$35'
                 },
                 {
-                    img: '/img/246154_d8b0_3-272x161.jpg',
-                    category: 'Development',
-                    text: 'Web Design for Beginners: Real World Coding in HTML & CSS',
-                    voto: 4,
-                    price: 'Free'
+                    img: '/img/1414956_d944_15-272x161.jpg',
+                    category: 'Arts & Crafts',
+                    text: 'Mastering Brushstrokes – Part 1',
+                    voto: 5,
+                    originalPrice: '$19.99',
+                    price: '$10'
                 },
                 {
-                    img: '/img/246154_d8b0_3-272x161.jpg',
-                    category: 'Development',
-                    text: 'Web Design for Beginners: Real World Coding in HTML & CSS',
-                    voto: 4,
-                    price: 'Free'
+                    img: '/img/1109398_4c13-272x161.jpg',
+                    category: 'Arts & Crafts',
+                    text: 'Paint Realistic Watercolour and Botanicals – MAGNOLIAS',
+                    voto: 5,
+                    originalPrice: '$69.99',
+                    price: '$35'
                 },
             ]
         }
