@@ -3,7 +3,7 @@
         <h2>Popular Development Courses</h2>
         <div class="row py-5">
             <CardComponent v-for="card in popularCourses" :img="card.img" :category="card.category" :text="card.text"
-                :voto="card.voto" :price="card.price" />
+                :voto="card.voto" :price="card.price" :originalPrice="card.originalPrice"/>
         </div>
     </div>
     <ReadMore />
@@ -60,6 +60,7 @@ export default {
                     category: 'Development',
                     text: 'The Complete iOS 10 & Swift 3 Developer Course',
                     voto: 4,
+                    originalPrice: '',
                     price: 'Free'
                 },
                 {
@@ -67,35 +68,40 @@ export default {
                     category: 'Development',
                     text: 'Web Design for Beginners: Real World Coding in HTML & CSS',
                     voto: 4,
-                    price: 'Free'
+                    originalPrice : '$129.99',
+                    price: '$65'
                 },
                 {
                     img: '/img/752950_b773-272x161.jpg',
                     category: 'Development',
                     text: 'GitHub Ultimate: Master Git and GitHub–Beginner to Expert',
                     voto: 4,
-                    price: 'Free'
+                    originalPrice: '$99.99',
+                    price: '$50'
                 },
                 {
                     img: '/img/1253188_58f7_2-272x161.jpg',
                     category: 'Development',
                     text: 'The Complete iOS 11 & Swift Developer Course–Build 20 Apps',
                     voto: 4,
-                    price: 'Free'
+                    originalPrice: '$199.99',
+                    price: '$100'
                 },
                 {
                     img: '/img/919872_ed54_6-272x161.jpg',
                     category: 'Development',
                     text: 'Android Java Masterclass–Become an App Developer',
                     voto: 4,
-                    price: 'Free'
+                    originalPrice: '$99.99',
+                    price: '$50'
                 },
                 {
                     img: '/img/951684_9c1a_2-272x161.jpg',
                     category: 'Development',
                     text: 'Xamarin Forms: Build Native Cross-platform Apps with C#',
                     voto: 4,
-                    price: 'Free'
+                    originalPrice: '$189.99',
+                    price: '$95'
                 }
             ],
             categories: [

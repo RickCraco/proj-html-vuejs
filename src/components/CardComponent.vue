@@ -4,9 +4,14 @@
             <img :src="img" class="card-img" alt="">
             <div class="card-body">
                 <h5 class="card-title my-1">{{ category }}</h5>
-                <p class="card-text">{{ text }}</p>
-                <p>{{ voto }}</p>
-                <span>{{ price }}</span>
+                <p class="card-text border-bottom pb-2">{{ text }}</p>
+                <div class="d-flex justify-content-between">
+                    <p>{{ voto }}</p>
+                    <span>
+                        <p class="m-0 text-decoration-line-through">{{ originalPrice }}</p> 
+                        {{ price }}
+                    </span>
+                </div>
             </div>
         </div>
     </div>
@@ -21,6 +26,7 @@ export default {
         text: String,
         voto: Number,
         price: String,
+        originalPrice: String,
     },
     data() {
         return {
@@ -33,4 +39,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+    span{
+        display: block;
+    }
+</style>
