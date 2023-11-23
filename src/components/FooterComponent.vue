@@ -37,6 +37,12 @@
             </div>
         </div>
     </div>
+    <div class="my-bg-footer py-4 text-white">
+        <div class="container">
+            <img src="/img/footer-logo2x-50x56.png" alt="" class="logo-footer">
+            <span class="ps-3">Copyright © 2022. MasterStudy Theme by StylemixThemes</span>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -84,6 +90,10 @@
 </script>
 
 <style lang="scss" scoped>
+
+    .logo-footer{
+        width: 30px;
+    }
 
     img{
         width: 250px;
