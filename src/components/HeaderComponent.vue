@@ -32,38 +32,42 @@
                 </div>
             </div>
         </div>
-        <div class="container d-flex align-items-center mt-3">
+        <div class="container d-flex align-items-center mt-3 justify-content-between">
             <div>
                 <img src="/img/MasterStudy.svg" alt="">
             </div>
-            <div class="ps-4">
-                <span class="itemmenu">
-                    <i class="fa-solid fa-bars"></i> CATEGORY
-                    <ul class="submenu">
-                        <li v-for="item in courseMenu" class="py-2">
-                            {{ item.name }}
-                            <ul class="sub-sub-menu d-flex flex-column flex-wrap">
-                                <li v-for="subitem in item.links" class="py-2">{{ subitem }}</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </span>
+            <div class="d-flex align-items-center">
+                <div class="pe-2">
+                    <span class="itemmenu">
+                        <i class="fa-solid fa-bars"></i> CATEGORY
+                        <ul class="submenu">
+                            <li v-for="item in courseMenu" class="py-2">
+                                {{ item.name }}
+                                <ul class="sub-sub-menu d-flex flex-column flex-wrap">
+                                    <li v-for="subitem in item.links" class="py-2">{{ subitem }}</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="d-flex align-items-center w-auto">
+                    <input type="text" class="" placeholder="Search Courses">
+                    <button class="bg-danger border-0"><i class="fa-solid fa-magnifying-glass px-2 py-2"></i></button>
+                </div>
+                <div class="ps-4">
+                    <span><i class="fa-solid fa-bullhorn"></i> Become an Instructor</span>
+                    <span class="ps-4"><i class="fa-solid fa-toolbox"></i> For Enterprise</span>
+                </div>
             </div>
-            <div class="ps-4">
-                <input type="text" class="">
-            </div>
-            <div>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="d-flex align-items-center" id="login">
-                <span>scritta</span>
-                <button>bottone</button>
-                <span>icona</span>
+            <div class="d-flex align-items-center">
+                <span class="pe-2"><i class="fa-regular fa-user"></i> Log in</span>
+                <Button :text="'SIGN UP'" :color="'#FF4450'" :colorHover="'#457993'" class="p-0 m-0"/>
+                <span class="ps-2"><i class="fa-regular fa-heart"></i></span>
             </div>
         </div>
         <div class="text-center mt-3 text-white text-align-center" id="div-boack">
-            <ul class="list-unstyled text-center d-flex justify-content-center align-items-center position-relative big-menu h-100 m-0">
+            <ul
+                class="list-unstyled text-center d-flex justify-content-center align-items-center position-relative big-menu h-100 m-0">
                 <li class="px-5 py-4 my-bg-hover" v-for="item in courseMenu"><i :class="item.icon"></i>
                     {{ item.name }}
                     <ul class="row list-unstyled big-sub-menu">
@@ -87,8 +91,12 @@
 </template>
 
 <script>
+import Button from './Button.vue';
 export default {
     name: 'HeaderComponent',
+    components: {
+        Button
+    },
     data() {
         return {
             pageMenu: [
@@ -230,6 +238,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+button {
+    height: 35px;
+}
+
+input {
+    width: 300px;
+    height: 35px;
+    border: none;
+    background-color: lightgrey;
+}
+
 .my-slide {
     padding-left: 500px;
 }
@@ -246,12 +265,13 @@ export default {
     background-color: #FF4450;
 }
 
-.my-bg-hover{
+.my-bg-hover {
     transition: all 0.4s ease;
     height: 100%;
-    &:hover{
+
+    &:hover {
         background-color: #457993;
-       
+
     }
 }
 
@@ -305,12 +325,13 @@ export default {
 
 .big-menu {
 
-    > li:hover{
-        .big-sub-menu{
+    >li:hover {
+        .big-sub-menu {
             opacity: 1;
             z-index: 1;
         }
     }
+
     .big-sub-menu {
         position: absolute;
         top: 100%;

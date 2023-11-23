@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-4 py-4">
+    <div class="py-4">
         <button class="rounded-pill position-relative border-0" :style="{'background-color':  color}">
             <span>{{ text }}</span>
             <div :style="{'background-color': colorHover}"></div>
