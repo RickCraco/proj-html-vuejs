@@ -6,7 +6,7 @@
         </div>
         <div class="ms-5 align-items-center">
             <p>YOUR EMAIL ADDRESS</p>
-            <input type="text" placeholder="Enter your E-mail">
+            <input type="text" placeholder="Enter your E-mail" class="border-0">
         </div>
     </div>
 </template>
