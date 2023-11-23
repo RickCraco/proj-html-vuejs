@@ -93,13 +93,14 @@
     }
 
     .my-col-3{
-        width: 2em;
-        height: 2em;
+        width: 3em;
+        height: 3em;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: all 0.5s ease;
+        font-size: 1em;
         
         i{
             transition: all 0.5s ease;
