@@ -23,7 +23,13 @@
                 </div>
                 <div class="col-3 ps-4">
                     <h5>SOCIAL NETWORK</h5>
-
+                    <div class="row g-2">
+                        <div class="col-3" v-for="icon in socials">
+                            <div class="my-col-3" :style="{'background-color': icon.color}">
+                                <i :class="icon.icon"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-3 ps-4">
 
@@ -69,7 +75,7 @@
                     },
                     {
                         icon: 'fa-brands fa-skype',
-                        color: 'e65334'
+                        color: '#e65334'
                     }
                 ]
             }
@@ -84,5 +90,26 @@
 
     p{
         font-size: 13px;
+    }
+
+    .my-col-3{
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease;
+        
+        i{
+            transition: all 0.5s ease;
+        }
+
+        &:hover{
+            transform: rotateY(180deg);
+            i{
+                transform: rotateY(180deg);
+            }
+        }
     }
 </style>
