@@ -8,10 +8,10 @@
     </div>
     <ReadMore />
     <div class="container mt-4 pt-4">
-        <h2 class="text-center">Recent Courses</h2>
+        <h2 class="text-center my-fs">Recent Courses</h2>
         <div class="pt-3">
             <ul class="list-unstyled text-center d-flex justify-content-center align-items-center">
-                <li class="px-4" v-for="item in categories">{{ item.name }}</li>
+                <li class="px-4 rounded-pill py-2" v-for="item in categories">{{ item.name }}</li>
             </ul>
         </div>
         <div class="row py-5">
@@ -21,7 +21,7 @@
     </div>
     <NewsLetter/>
     <div class="container pt-4">
-        <h2 class="text-center">Popular Courses</h2>
+        <h2 class="text-center my-fs">Popular Courses</h2>
         <p class="text-center">Discover our most popular courses for self learning</p>
         <div class="row py-5 g-2 flex-nowrap overflow-hidden scroll-smooth" ref="carosello">
             <CardComponent v-for="card in recentCourses" :img="card.img" :category="card.category" :text="card.text" :voto="card.voto" :price="card.price" :originalPrice="card.originalPrice"/>
@@ -262,4 +262,16 @@ export default {
         cursor: pointer;
         transition: 3s ease;
     }
+
+    li{
+        &:hover{
+            background-color: #457993;
+            color: white;
+        }
+    }
+
+    .my-fs{
+        font-size: 50px;
+    }
+
 </style>
